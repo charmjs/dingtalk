@@ -1,0 +1,13 @@
+imap: import.json
+
+scripts:
+    exec: deno run --unstable # e.g. vr exec lib/sign.ts
+    test:gitlab_ci:
+        cmd: deno run --unstable lib/__tests__/gitlab_ci.test.ts
+        allow:
+            - env
+            - net
+        env:
+            I_DINGTALK_ROBOT_ACCESS_TOKEN: 4291a623ff55fdd9fb338ce1b2df759fd9df2f81ac085397782839f3600cbe11
+            I_DINGTALK_ROBOT_SECRET: SEC46702d077453d8246d6dbb17fbb06e4c36b5cf02f16a56ac7b97c2aa2ec002b5
+            

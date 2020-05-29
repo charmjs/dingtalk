@@ -1,0 +1,50 @@
+{
+    "include": ["**/*.ts"],
+    "exclude": [],
+    "compilerOptions": {
+        // configs supported by deno 1.0.2
+        "allowJs": false,
+        "allowUmdGlobalAccess": false,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "assumeChangesOnlyAffectDirectDependencies": false,
+        "checkJs": false,
+        "disableSizeLimit": false,
+        "generateCpuProfile": "profile.cpuprofile",
+        "jsx": "react",
+        "jsxFactory": "React.createElement",
+        "lib": [], // overrides for vscode
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitUseStrict": false,
+        "noStrictGenericChecks": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "preserveConstEnums": false,
+        "removeComments": false,
+        "resolveJsonModule": true,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "suppressExcessPropertyErrors": false,
+        "suppressImplicitAnyIndexErrors": false,
+        "useDefineForClassFields": false,
+
+        // unsupported configs, only set for VSCode
+        "target": "ES2020",
+        "module": "ESNext",
+        "plugins": [
+            {
+                "name": "typescript-deno-plugin",
+                "enable": true,
+                "importmap": "import.json" // 
+            }
+        ],
+        "skipLibCheck": true
+    }
+}

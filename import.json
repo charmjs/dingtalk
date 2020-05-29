@@ -1,0 +1,5 @@
+{
+    "imports": {
+        "hmac/": "https://denopkg.com/chiefbiiko/hmac@v1.0.2/"
+    }
+}
